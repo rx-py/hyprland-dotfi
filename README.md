@@ -18,7 +18,7 @@ This repo holds the dotfiles for my hyprland setup on Arch Linux. [Hyprland](htt
 To use these configuration files, you need to have Hyprland and some dependences installed on your system. You can install it by running the following command:
 
 ```bash
-yay -Syu base-devel python-psutil pywal-git feh picom-jonaburg-fix dunst zsh playerctl brightnessctl kitty neofetch thunar rofi ranger cava pulseaudio alsa-utils neovim vim git ly google-chrome xrander network-manager-applet pavucontrol --noconfirm --needed
+yay -Syu base-devel hyprland feh pywal-git dunst zsh pamixer playerctl brightnessctl kitty neofetch thunar rofi ranger pulseaudio alsa-utils neovim vim git firefox xrander network-manager-applet networkmanager pavucontrol waybar swaybg swaylock sddm gtop flameshot firewalld eza cbonsai-git duf cava bluez-utils bluez blueman bitwarden asciiquarium--noconfirm --needed
 ```
 
 
@@ -50,7 +50,7 @@ nvim theme = [everforest](https://github.com/sainnhe/everforest)
 
 ## Conclusion
 
-Should now have a working installation of Qtile with these configuration files. 
+Should now have a working installation of Hyprland with these configuration files. 
 
 ## Screenshots
 ![Screenshot](wal/nfscreen.png)
