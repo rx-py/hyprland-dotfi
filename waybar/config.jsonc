@@ -1,0 +1,42 @@
+//
+// Waybar config file
+{
+    "include": "~/.config/waybar/modules",
+    "name": "main-bar",
+    "id": "main-bar",
+    "layer": "top",
+    "mode": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "height": 20,
+    "width": "",
+    "spacing": 0,
+    "margin": 0,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "fixed-center": false,
+    "ipc": true,
+    "socket": "/tmp/waybar-ipc.sock",
+    "modules-left": [
+        "custom/kernel",
+        "hyprland/workspaces",
+        "custom/media"
+    ],
+    "modules-right": [
+        "custom/dunst",
+        "custom/pacman",
+        "disk",
+        "cpu",
+        "memory",
+        "network",
+        "custom/vpn",
+        "pulseaudio",
+        "battery",
+        "backlight",
+        "clock"
+    ],
+}
+//   🖧    ⋏ ♝          ☢  ♠ 🔓             

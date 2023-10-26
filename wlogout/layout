@@ -1,0 +1,42 @@
+{
+    "label" : "lock",
+    "action" : "zsh /$HOME/.config/wlogout/scripts/lockscreen.sh",
+    "text" : "Lock",
+    "keybind" : "l"
+}
+
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit 0",
+    "text" : "Logout",
+    "keybind" : "e"
+}
+
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
+
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}
+
+{
+    "label" : "cancel",
+    "action" : "",
+    "text" : "Cancel",
+    "keybind" : "c"
+}
+

@@ -1,0 +1,30 @@
+/* Global settings */
+configuration {
+    font: "DejaVu Sans Mono 14";
+    background-color: #282828;
+    text-color: #ebdbb2;
+    border-color: #458588;
+    border-width: 1;
+}
+
+/* Window settings */
+window {
+    background-color: #282828;
+}
+
+/* Normal state */
+mainbox {
+    text-color: #ebdbb2;
+}
+
+/* Selected item */
+mainbox-selected {
+    background-color: #458588;
+    text-color: #ebdbb2;
+}
+
+/* Urgent item */
+mainbox urgent {
+    text-color: #fb4934;
+}
+

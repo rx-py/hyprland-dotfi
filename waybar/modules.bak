@@ -1,0 +1,157 @@
+//
+// Waybar modules config
+
+{
+    "custom/socket": {
+    	"ipc": "/tmp/waybar-ipc.sock"
+    },
+
+    "custom/kernel": {
+        "format": "<span foreground='#c6089e'> </span> {}",
+        "max-length": 15,
+        "interval": 7200,
+        "exec": "uname -r"
+    },
+
+    "hyprland/workspaces": {
+        "format": "<span background='#1a1d25'>{icon} {name}</span>",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "sort-by-number": true,
+        "on-scroll-up": "hyperctl dispatch workspace e+1",
+        "on-scroll-down": "hyperctl dispatch workspace e-1",
+        "on-click": "activate"
+    },
+
+    "custom/pacman": {
+        "format": "{} <span foreground='#ebdbb2'> </span>",
+        "interval": 3600,
+        "exec": "checkupdates | wc -l",
+        "signal": 8
+    },
+
+    "custom/media": {
+        "format": "{}",
+        "escape": true,
+        "return-type": "json",
+        "max-length": 25,
+        "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
+    },
+
+    "custom/usb": {
+        "format": "<span foreground='#ebdbb2'> </span> {}",
+        "interval": 3,
+        "exec": "$HOME/.config/waybar/scripts/usbstatus.sh",
+        "return-type": "json",
+        "max-length": 15
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "<span foreground='#ebdbb2'></span> {:%a, %d %b // %H:%M}"
+    },
+
+    "cpu": {
+        "interval": 0,
+        "format": "<span foreground='#ebdbb2'></span> {icon} {usage}%",
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}",
+        "format-icons": [
+            "<span color='#69ff94'>▁</span>",
+            "<span color='#69ff94'>▂</span>",
+            "<span color='#ffa500'>▄</span>",
+            "<span color='#ffa500'>▅</span>",
+            "<span color='#dd532e'>▆</span>",
+            "<span color='#dd532e'>▇</span>"
+        ]
+    },
+
+    "disk": {
+        "interval": 30,
+        "path": "/",
+        "format": "<span foreground='#ebdbb2'></span> {percentage_used}%",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "memory": {
+        "interval": 0,
+        "format": "<span foreground='#ebdbb2'>🖧 </span>{percentage}%",
+    },
+
+    "backlight": {
+        "format": "<span foreground='#ebdbb2'>{icon}</span> {percent}%",
+        "format-icons": ["",""]
+    },
+
+    "battery": {
+        "full-at": 100,
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "<span foreground='#ebdbb2'> </span>{icon} {capacity}%",
+        "format-charging": "<span foreground='#70a54a'></span> {icon}{capacity}%",
+        "format-icons": [
+            "<span color='#ff005c'></span>",
+            "<span color='#e67500'></span>",
+            "<span color='#9affcc'></span>",
+            "<span color='#9affcc'></span>",
+            "<span color='#9affcc'></span>",
+        ]
+    },
+
+    "network": {
+        "interval": 5,
+        "interface": "wlan0",
+        "format-wifi": "<span foreground='#a77896'> {ipaddr}/{cidr}</span>",
+        "format-ethernet": "<span foreground='#a77896'>⮔ {ipaddr}/{cidr}</span>",
+        "format-linked": "<span foreground='#a77896'>⚡{ifname}</span>",
+        "format-disconnected": "<span foreground='#800035'>⚡Disconnected</span>",
+        "tooltip-format": "{ifname}: {essid}/{cidr}\n {bandwidthDownBits}\n {bandwidthUpBits}"
+    },
+
+
+    "custom/vpn": {
+    	"format": "<span foreground='#ebdbb2'></span> {}",
+    	"exec": "$HOME/.config/waybar/scripts/vpn.py",
+	"return-type": "json",
+    	"interval": 5
+    },
+
+
+    "pulseaudio": {
+        "format": "<span foreground='#ebdbb2'>{icon}</span>{volume}%{format_source}",
+        "format-bluetooth": "<span foreground='#ebdbb2>{icon}</span> {volume}% {format_source}",
+        "format-bluetooth-muted": "<span foreground='#ebdbb2'> {icon}</span>{format_source}",
+        "format-muted": "<span foreground='#ebdbb2'></span> {format_source}",
+        "format-source": "<span foreground='#ebdbb2'> </span>{volume}%",
+        "format-source-muted": "<span foreground='#ebdbb2'></span>",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [""]
+        },
+        "on-click": "pavucontrol",
+        "on-click-right": "env LIBGL_ALWAYS_SOFTWARE=1 helvum"
+    }
+}
+

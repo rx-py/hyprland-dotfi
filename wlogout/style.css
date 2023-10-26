@@ -1,0 +1,106 @@
+/* Defines how the background looks */
+window {
+    font-family: CaskaydiaCove Nerd Font, monospace;
+    font-size: 12pt;
+    color: #cdd6f4;
+    background-color: rgba(17, 17, 27, 0.88);
+}
+
+/* Define a common style for all buttons */
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    border: none;
+    color: #ced7f4;
+    text-shadow: none;
+    border-radius: 20px;
+    background-color: rgba(49, 50, 68, 0.1);
+    margin: 5px;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(49, 50, 68, 0.1);
+    text-shadow: none;
+    border-radius: 20px;
+}
+
+/* Define styles for individual buttons with icons */
+#lock {
+    background-image: url("/home/rx-py/.config/wlogout/icons/blue-lock.png");
+    background-size: 45%;
+}
+
+#lock:focus {
+    background-image: url("/home/rx-py/.config/wlogout/icons/blue-lock.png");
+    background-size: 45%;
+    /* Add a different background-color and text color when the button is focused */
+    background-color: rgba(49, 50, 68, 0.1);
+    color: #ffffff;
+}
+
+
+#logout {
+    background-image: url("/home/rx-py/.config/wlogout/icons/log-out.png");
+    background-size: 50%;
+}
+
+#logout:focus {
+    background-image: url("/home/rx-py/.config/wlogout/icons/logout-hover.png");
+    background-size: 50%;
+    background-color: rgba(49, 50, 68, 0.1);
+    color: #a84551;
+}
+
+#suspend {
+    background-image: url("/home/rx-py/.config/wlogout/icons/sleeping.png");
+    background-size: 45%;
+}
+
+#suspend:focus {
+    background-image: url("/home/rx-py/.config/wlogout/icons/sleep-hover.png");
+    background-size: 45%;
+    background-color: rgba(49, 50, 68, 0.1);
+    color: #a84551;
+}
+
+#shutdown {
+    background-image: url("/home/rx-py/.config/wlogout/icons/power.png");
+    background-size: 40%;
+}
+
+#shutdown:focus {
+    background-image: url("/home/rx-py/.config/wlogout/icons/power-hover.png");
+    background-size: 40%;
+    background-color: rgba(49, 50, 68, 0.1);
+    color: #a84551;
+}
+
+#reboot {
+    background-image: url("/home/rx-py/.config/wlogout/icons/reboot.png");
+    background-size: 40%;
+}
+
+#reboot:focus {
+    background-image: url("/home/rx-py/.config/wlogout/icons/restart-hover.png");
+    background-size: 40%;
+    background-color: rgba(49, 50, 68, 0.1);
+    color: #a84551;
+}
+
+#cancel {
+    background-image: url("/home/rx-py/.config/wlogout/icons/cross.png");
+    background-size: 40%;
+}
+
+#cancel:focus {
+    background-image: url("/home/rx-py/.config/wlogout/icons/cancel-hover.png");
+    background-size: 40%;
+    background-color: rgba(49, 50, 68, 0.1);
+    color: #a84551;
+}
+
+
+
+
