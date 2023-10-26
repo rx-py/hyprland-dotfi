@@ -54,4 +54,4 @@ Should now have a working installation of Hyprland with these configuration file
 
 ## Screenshots
 ![Screenshot](wal/nfscreen.png)
-![Screenshot](wal/page1.png)
+![Screenshot](wal/page2.png)
