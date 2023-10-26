@@ -10,24 +10,26 @@
 </a>
 </div>
 
-This repo holds the dotfiles for my hyprland setup on Arch Linux. [Hyprland](https://wiki.hyprland.org/) 
+This repo holds the dotfiles for my hyprland setup on Arch Linux. [Hyprland](https://wiki.hyprland.org/). I intend to keep adding on this.
+
 
 ## Installation
 
 To use these configuration files, you need to have Hyprland and some dependences installed on your system. You can install it by running the following command:
 
 ```bash
-yay -Syu base-devel qtile python-psutil pywal-git feh picom-jonaburg-fix dunst zsh playerctl brightnessctl alacritty pfetch thunar rofi ranger cava pulseaudio alsa-utils neovim vim git ly google-chrome xrander network-manager-applet pavucontrol --noconfirm --needed
+yay -Syu base-devel python-psutil pywal-git feh picom-jonaburg-fix dunst zsh playerctl brightnessctl kitty neofetch thunar rofi ranger cava pulseaudio alsa-utils neovim vim git ly google-chrome xrander network-manager-applet pavucontrol --noconfirm --needed
 ```
 
 
 ## Usage
 
-To use these configuration files, simply copy the contents of this repository to your `~/.config/qtile/` directory. Then, restart Qtile by pressing `mod + control + r`.
+To use these configuration files, simply copy the contents of this repository to which ever directory you would like.
+
 
 ```bash
-git clone https://github.com/jR4dh3y/qtiledots 
-cd qtiledots
+git clone https://github.com/rx-py/hyprland-dotfi.git 
+cd hyprland-dotfi
 ```
 
 ```bash
@@ -38,14 +40,17 @@ cp -R ./. ~/
 
 The following configuration files are included in this repository:
 
-- `config.py`: This file contains the main configuration for Qtile.
-- `kitty.conf`: This file contains the config for alacritty terminal.
-- `.zshrc`: This file contains my zsh configs.
-- `hyprland.conf` : This contains settings for my compositor 
+- `.configs`: This folder holds the main configs for the apps I use along with hyprland
+- `scripts`: This folder contains system scripts that allows for better functionality.
+- `wal`: This folder would be where all images are stored
+
+
+nvim theme = [everforest](https://github.com/sainnhe/everforest)
+
 
 ## Conclusion
 
-That's it! You should now have a working installation of Qtile with these configuration files.
+Should now have a working installation of Qtile with these configuration files. 
 
 ## Screenshots
 ![Screenshot](wal/nfscreen.png)
