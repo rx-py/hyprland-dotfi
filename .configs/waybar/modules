@@ -4,8 +4,8 @@
 {
     "custom/kernel": {
         "format": "<span foreground='#c6089e'>  </span> {}",
-	"max-length": 15,
-        "interval": 7200,
+	    "max-length": 15,
+        "interval": 3600,
         "exec": "uname -r"
     },
 
@@ -16,7 +16,7 @@
             "2": " ",
             "3": "🗗 ",
             "4": " ",
-	          "5": " ",
+	        "5": " ",
             "6": "✉ ",
             "7": " ",
             "8": "",
@@ -25,14 +25,14 @@
             "default": ""
         },
         "sort-by-number": true,
-	"on-scroll-up": "hyperctl dispatch workspace e+1",
-	"on-scroll-down": "hyperctl dispatch workspace e-1",
-	"on-click": "activate"
+	    "on-scroll-up": "hyperctl dispatch workspace e+1",
+	    "on-scroll-down": "hyperctl dispatch workspace e-1",
+	    "on-click": "activate"
     },
-   
+
     "custom/pacman": {
         "format": "{} <span foreground='#928374'> </span>",
-        "interval": 3600,
+        "interval": 60,
         "exec": "checkupdates | wc -l",
         "exec-if": "exit 0",
         "signal": 8
@@ -40,20 +40,20 @@
 
     "custom/media": {
         "format": "{icon} {}",
-	"escape": true,
-	"return-type": "json",
+	    "escape": true,
+	    "return-type": "json",
         "max-length": 25,
         "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
     },
 
     "custom/dunst": {
     	"exec": "$HOME/.config/waybar/scripts/dunst.sh",
-	"on-click": "dunstctl set-paused toggle",
+	    "on-click": "dunstctl set-paused toggle",
     	"restart-interval": 1,
-	"return-type": "json",
-	"max-length": 10,
-	"signal": 8,
-	"format": "<span foreground='#928374'></span>{}"
+	    "return-type": "json",
+	    "max-length": 10,
+	    "signal": 8,
+	    "format": "<span foreground='#928374'></span>{}"
     },
 
     "clock": {
@@ -123,7 +123,6 @@
 	]
     },
 
-    
     "network": {
         "interval": 5,
         "interface": "wlan0",
@@ -134,13 +133,12 @@
         "tooltip-format": "{ifname}: {essid}/{cidr}\n {bandwidthDownBits}\n {bandwidthUpBits}"
     },
 
-    
     "custom/vpn": {
     	"format": "{}",
     	"exec": "$HOME/.config/waybar/scripts/vpn.py",
-	"return-type": "json",
+	    "return-type": "json",
     	"interval": 5,
-	"max-length": 5
+	    "max-length": 5
     },
 
     "pulseaudio": {
