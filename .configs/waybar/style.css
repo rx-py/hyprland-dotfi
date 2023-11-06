@@ -202,6 +202,16 @@ window#waybar {
   border-bottom: 1px solid @traybg;
 }
 
+#bluetooth {
+  color: @foreground;
+  padding: 0 10px;
+  margin: 4px 2px;
+  background: @traybg;
+  border-radius: 90px;
+  border-top: 1px solid @traybg;
+  border-bottom: 1px solid @traybg;
+}
+
 
 #backlight {
   color: @foreground;

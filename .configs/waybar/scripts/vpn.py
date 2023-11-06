@@ -31,7 +31,7 @@ if __name__ == "__main__":
         vpn_status = " "
         color = "#6ffbc8"  # Green for active status
     else:
-        vpn_status = "🔓 "
+        vpn_status = "  "
         color = "#fb6fa2"  # Red for inactive status
     
     # Create a JSON structure with the specified color
