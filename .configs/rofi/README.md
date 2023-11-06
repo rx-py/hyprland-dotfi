@@ -7,11 +7,11 @@ sudo pacman -S rofi
 If you not downloaded yet my repository:
 
 ```bash
-git clone https://github.com/igmt-official/dotfiles.git
+git clone https://github.com/rx-py/hyprland-dotfi.git
 ```
 
 Copy my configs:
 
 ```bash
-cp -r dotfiles/.config/rofi ~/.config
+cp -r hyprland-dotfi/.config/rofi ~/.config
 ```
