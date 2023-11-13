@@ -13,6 +13,12 @@
 This repo holds the dotfiles for my hyprland setup on Arch Linux. [Hyprland](https://wiki.hyprland.org/). I intend to keep adding on this.
 
 
+## Screenshots
+![Screenshot](wal/nfscreen.png)
+![Screenshot](wal/page2.png)
+![Screenshot](wal/wlogout.png)
+
+
 ## Installation
 
 To use these configuration files, you need to have Hyprland and some dependences installed on your system. You can install it by running the following command:
@@ -48,8 +54,3 @@ The following configuration files are included in this repository:
 nvim theme = [everforest](https://github.com/sainnhe/everforest)
 
 
-
-## Screenshots
-![Screenshot](wal/nfscreen.png)
-![Screenshot](wal/page2.png)
-![Screenshot](wal/wlogout.png)
