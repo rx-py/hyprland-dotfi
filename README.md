@@ -3,10 +3,10 @@
 
 <div  align="center">
   
-![](https://img.shields.io/github/stars/rx-py/hyprland-dotfi?style=for-the-badge&logo=github&color=83c5be&logoColor=D9E0EE&labelColor=252733)
-![](https://img.shields.io/github/last-commit/rx-py/hyprland-dotfi?style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733)
+[![](https://img.shields.io/github/stars/rx-py/hyprland-dotfi?style=for-the-badge&logo=github&color=83c5be&logoColor=D9E0EE&labelColor=252733)](https://github.com/rx-py/hyprland-dotfi.git)
+[![](https://img.shields.io/github/last-commit/rx-py/hyprland-dotfi?style=for-the-badge&color=006d77&logoColor=D9E0EE&labelColor=252733)](https://github.com/rx-py/hyprland-dotfi.git)
 <a href="https://github.com/rx-py/hyprland-dotfi/blob/main/LICENSE">
-<img alt="License" src="https://img.shields.io/github/license/rx-py/hyprland-dotfi?style=for-the-badge&logo=github&color=1d3557&logoColor=D9E0EE&labelColor=252733"/>
+    <img alt="License" src="https://img.shields.io/github/license/rx-py/hyprland-dotfi?style=for-the-badge&logo=github&color=1d3557&logoColor=D9E0EE&labelColor=252733"/>
 </a>
 </div>
 
